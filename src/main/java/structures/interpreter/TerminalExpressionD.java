@@ -1,4 +1,4 @@
-package interpreter.structure;
+package structures.interpreter;
 
 public class TerminalExpressionD extends AbstractExpression{
 

@@ -1,4 +1,4 @@
-package interpreter.structure;
+package structures.interpreter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ public class NonTerminalExpressionParser extends AbstractExpression {
 
     public NonTerminalExpressionParser(String messageToInterpret) {
 
-        context = new Context(messageToInterpret.replace(" ","")); //Eliminando los espacios, ya que: A B C ---> 123 (vamos de con espacios a sin)
+        context = new Context(messageToInterpret.replace(" ",""));
 
         for(String charOriginal : messageToInterpret.split(" ")) {
 

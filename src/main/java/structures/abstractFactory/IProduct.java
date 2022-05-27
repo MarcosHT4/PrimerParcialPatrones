@@ -1,4 +1,4 @@
-package abstractFactory.structure;
+package structures.abstractFactory;
 
 public interface IProduct {
 

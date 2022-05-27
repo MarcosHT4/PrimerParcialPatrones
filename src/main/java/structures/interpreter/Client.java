@@ -1,20 +1,14 @@
-package builder.structure;
+package structures.interpreter;
 
 public class Client {
 
     public static void main(String[] args) {
 
-        Director director = new Director();
+        String msg = " A B C D E";
 
-        ConcreteBuilder1 concreteBuilder1 = new ConcreteBuilder1();
+        NonTerminalExpressionParser parser = new NonTerminalExpressionParser(msg);
 
-        director.setBuilder(concreteBuilder1);
-        director.buildProduct();
-
-        Product product = director.getProductFromBuilder();
-        product.showInfo();
-
-
+        System.out.println("Mensaje interpretado: " + parser.evaluateMsg());
 
     }
 

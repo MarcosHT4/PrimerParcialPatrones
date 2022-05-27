@@ -1,4 +1,4 @@
-package prototype.structure;
+package structures.prototype;
 
 public class Client {
 
@@ -22,9 +22,9 @@ public class Client {
         System.out.println("obj1 " + obj1.getAttribute6());
         System.out.println("obj1 " + obj1.getAttribute7());
 
-        //Ahora si, para poder clonar el objeto1:
 
-        ConcretePrototype1 obj2 = (ConcretePrototype1) obj1.clone(); //Ahora no estamos apuntando a un segmento de memoria, lo estamos clonando
+
+        ConcretePrototype1 obj2 = (ConcretePrototype1) obj1.clone();
 
         obj2.setAttribute7("Fecha de caducidad: 4/4/2024");
 
@@ -39,7 +39,6 @@ public class Client {
 
     }
 
-    //Como podemos ver, el cambiar el atributo en obj2, no cambio en absoluto el atributo del obj1; por lo tanto,
-    //la clonacion ha sido exitosa
+
 
 }

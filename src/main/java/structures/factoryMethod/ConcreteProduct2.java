@@ -1,4 +1,4 @@
-package factoryMethod.structure;
+package structures.factoryMethod;
 
 public class ConcreteProduct2 implements IProducto {
 
@@ -21,7 +21,7 @@ public class ConcreteProduct2 implements IProducto {
 
     }
 
-    //Mas metodos...
+
 
 
 

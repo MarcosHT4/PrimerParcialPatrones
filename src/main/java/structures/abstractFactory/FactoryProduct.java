@@ -1,4 +1,4 @@
-package abstractFactory.structure;
+package structures.abstractFactory;
 
 public class FactoryProduct {
 
@@ -10,17 +10,14 @@ public class FactoryProduct {
 
             case "product1":
                 product = new ConcreteProduct1();
-                // logica...
                 break;
 
             case "product2":
                 product = new ConcreteProduct2();
-                //logica...
                 break;
 
             default:
                 product = new ConcreteProduct3();
-                //logica...
                 break;
 
 

@@ -10,13 +10,13 @@ public class Director {
 
     }
 
-    public void setBuilder(Builder builder) { //Por aqui, mandamos un ConcreteBuilder
+    public void setBuilder(Builder builder) {
 
         this.builder = builder;
 
     }
 
-    public void buildProduct() { //Esto nos sirve para construir el objeto completo.
+    public void buildProduct() {
 
         builder.createProduct();
 

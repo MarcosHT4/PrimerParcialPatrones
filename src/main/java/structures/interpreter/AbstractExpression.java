@@ -1,4 +1,4 @@
-package interpreter.structure;
+package structures.interpreter;
 
 public abstract class AbstractExpression {
 

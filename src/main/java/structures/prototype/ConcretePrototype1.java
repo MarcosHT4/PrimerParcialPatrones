@@ -1,4 +1,4 @@
-package prototype.structure;
+package structures.prototype;
 
 public class ConcretePrototype1 implements IPrototype {
 

@@ -1,4 +1,4 @@
-package factoryMethod.structure;
+package structures.factoryMethod;
 
 public interface IProducto {
 
