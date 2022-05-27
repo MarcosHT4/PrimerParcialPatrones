@@ -3,11 +3,12 @@ package exam.singleton;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class BaseDeDatosTesis {
 
     private static BaseDeDatosTesis instance;
-    private Map<Tesis, Date> registro = new HashMap<>();
+    private Map<Tesis, Date> registro = new ConcurrentHashMap<>();
 
     private BaseDeDatosTesis() {
 
@@ -37,7 +38,7 @@ public class BaseDeDatosTesis {
 
     }
 
-    public void registrarTesis(Tesis tesis, Date date) {
+    public synchronized void registrarTesis(Tesis tesis, Date date) {
 
         if(!registro.containsKey(tesis)) {
 
@@ -51,7 +52,7 @@ public class BaseDeDatosTesis {
 
     }
 
-    public void mostrarRegistro() {
+    public synchronized void mostrarRegistro() {
 
         System.out.println("Registro");
         for(Map.Entry<Tesis,Date> entry: registro.entrySet()) {

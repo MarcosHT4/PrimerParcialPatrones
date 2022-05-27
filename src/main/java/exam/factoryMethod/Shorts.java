@@ -40,6 +40,7 @@ public class Shorts implements IElemento {
         System.out.println("Tamanio: " + getTamanio());
         System.out.println("Color: " + getColor());
         System.out.println("Garantia " + getGarantia());
+        System.out.println("/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*");
 
 
     }

@@ -10,6 +10,12 @@ public class Client {
         Medias medias = new MediasCreator().creator();
         Tenis tenis = new TenisCreator().creator();
 
+        pelotaFutbol.showInfo();
+        camiseta.showInfo();
+        shorts.showInfo();
+        medias.showInfo();
+        tenis.showInfo();
+
 
 
 

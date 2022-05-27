@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Client {
 
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
 
         JefeRecursosHumanos jefeRecursosHumanos  = new JefeRecursosHumanos();
 
@@ -50,11 +50,15 @@ public class Client {
         tema4.setDatosEstudiante(estudiante4);
 
 
+
+
         Thread thread1 = new Thread(new Runnable() {
             @Override
             public void run() {
 
                 jefeRecursosHumanos.registrarTesis(tema1, new Date());
+                jefeRecursosHumanos.mostrarDatosRegistro();
+
 
             }
         });
@@ -63,7 +67,9 @@ public class Client {
             @Override
             public void run() {
 
+
                 jefeRecursosHumanos.registrarTesis(tema2, new Date());
+                jefeRecursosHumanos.mostrarDatosRegistro();
 
             }
         });
@@ -73,6 +79,7 @@ public class Client {
             public void run() {
 
                 jefeRecursosHumanos.registrarTesis(tema3, new Date());
+                jefeRecursosHumanos.mostrarDatosRegistro();
 
             }
         });
@@ -83,6 +90,7 @@ public class Client {
             public void run() {
 
                 jefeRecursosHumanos.registrarTesis(tema4, new Date());
+                jefeRecursosHumanos.mostrarDatosRegistro();
 
             }
         });
@@ -92,17 +100,43 @@ public class Client {
             public void run() {
 
                 jefeRecursosHumanos.registrarTesis(tema1, new Date());
+                jefeRecursosHumanos.mostrarDatosRegistro();
 
             }
         });
 
+
+
+
+
+
+
+
+
+
         thread1.start();
+
         thread2.start();
+
         thread3.start();
+
         thread4.start();
+
         thread5.start();
 
-        jefeRecursosHumanos.mostrarDatosRegistro();
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
